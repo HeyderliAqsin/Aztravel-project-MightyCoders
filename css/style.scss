@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$myColor: #001F3F;
+$myColor1: #CB1511;
+$myColor2: #ffffff;
+$myColor3: #000000;
+$myColor4 : #ED6B5E;
+$myFamily: 'Kaushan Script', cursive;
+
+.container70{
+    width: 70%;
+    margin: auto;
+}
+
+
+@import '_home.scss';
+@import '_location.scss';
+@import '_cuisine.scss';
+@import '_Map.scss';
