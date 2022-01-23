@@ -1,0 +1,135 @@
+#destinationsFixed {
+    padding: 100px 0;
+    background-image: url(../img/dest.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .text {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        margin: 70px 0;
+
+        h2 {
+            padding: 10px 0;
+            font-size: 2.5rem;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            display: inline-flex;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                top: 35px;
+                width: 40px;
+                height: 0;
+                border-radius: 10px;
+                border-bottom: 4px solid $myColor4;
+            }
+
+            &::after {
+                right: -50px;
+
+            }
+
+            &::before {
+
+                left: -50px;
+
+
+            }
+        }
+
+    }
+}
+
+
+#destinations {
+
+    .dest-box {
+        padding: 40px 0 ;
+
+        .dest-text {
+
+            h4 {
+                padding-bottom: 10px;
+                color: $myColor4;
+                font-family: $myFamily;
+            }
+
+            .left-body {
+
+                .myUl {
+                    padding-top: 15px;
+
+                    li{
+
+                        span{
+                            color: $myColor4;
+                        }
+                    }
+                }
+
+                .myButton{
+                    display: flex;
+                    align-items: center;
+                    padding-right: 20px;
+                   
+                    a{
+                        border-radius: 25px;
+                        background-color: $myColor4;
+                        color: white;
+                        padding: 10px 15px;
+                        animation: btnAni .6s infinite;
+                        
+                    }
+
+                   
+                }
+
+
+
+            }
+        }
+
+        .dest-map {
+            height: 100%;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+
+        }
+    }
+}
+
+@keyframes btnAni {
+
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+    
+}

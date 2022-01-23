@@ -20,6 +20,9 @@ body{
     overflow-y: hidden
 }
 
+a{
+    text-decoration: none
+}
 
 @import '_home.scss';
 @import '_extras.scss';
@@ -29,5 +32,9 @@ body{
 @import '_hotels.scss';
 @import '_Map.scss';
 @import '_dish.scss';
+@import '_about.scss';
+@import '_contact.scss';
+@import '_detail.scss';
+@import '_tours.scss';
 @import '_responsive.scss';
 

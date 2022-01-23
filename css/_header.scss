@@ -6,6 +6,10 @@ header#header {
 
     .header-logo {
 
+        a{
+            display: block;
+        }
+
         img {
             width: 70px;
         }
@@ -33,7 +37,7 @@ header#header {
                 list-style: none;
                 margin-right: 20px;
                 position: relative;
-
+                
                 &:hover {
                     &::after {
                         width: 100%;

@@ -1,141 +1,159 @@
-@media (max-width:900px){
-    .sec-heading{
-      display: none;
+@media (max-width:900px) {
+    .sec-heading {
+        display: none;
     }
 }
-@media (max-width:700px){
-  #Dish{
-    .top-head{
-      width: 300px;
+
+@media (max-width:700px) {
+    #Dish {
+        .top-head {
+            width: 300px;
+        }
     }
-  }
 }
-@media (max-width:800px){
-  #Location{
-    .top-head{
-      p{
-        width: 300px;
-      }
+
+@media (max-width:800px) {
+    #Location {
+        .top-head {
+            p {
+                width: 300px;
+            }
+        }
     }
-  }
 }
 
 
 
 @media (max-width: 1200px) {
-  #header {
+    #header {
 
 
 
-      .header-icons {
+        .header-icons {
 
-          .header-language,
-          .header-search {
-              display: none;
-          }
-      }
-  }
+            .header-language,
+            .header-search {
+                display: none;
+            }
+        }
+    }
 
-  #video {
+    #video {
 
-      .adventure {
-          .adventure-bottom {
-              .adventure-box {
-                  h4 {
-                      font-size: 16px;
-                  }
-              }
+        .adventure {
+            .adventure-bottom {
+                .adventure-box {
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
 
-          }
-      }
-  }
+            }
+        }
+    }
 }
+
 
 
 @media (max-width: 992px) {
 
-  #header {
+    #header {
 
-      .header-text,
-      .header-icons {
-          display: none;
-      }
+        .header-text,
+        .header-icons {
+            display: none;
+        }
 
-      .header-mobile {
-          display: block !important;
-      }
-  }
+        .header-mobile {
+            display: block !important;
+        }
+    }
 
 
-  #video {
+    #video {
 
-      .adventure {
+        .adventure {
 
-          .adventure-top{
-              span{
-                  font-size: 10px;
-              }
-              h2{
-                  font-size: 18px;
-              }
-          }
-          .adventure-bottom {
-              .adventure-box{
-                  img{
-                      width: 50px;
-                  }
+            .adventure-top {
+                span {
+                    font-size: 10px;
+                }
 
-                  p{
-                      font-size: 12px;
-                  }
-              }
-          }
-      }
-  }
+                h2 {
+                    font-size: 18px;
+                }
+            }
+
+            .adventure-bottom {
+                .adventure-box {
+                    img {
+                        width: 50px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #contact {
+
+        .contact-right-message {
+            padding-top: 25px;
+        }
+    }
 
 }
 
 
+
+
 @media (max-width: 768px) {
-  
 
-  #video {
 
-      .adventure {
+    #video {
 
-          .adventure-top{
-              span{
-                  font-size: 10px;
-              }
-              h2{
-                  font-size: 18px;
-              }
-          }
-          .adventure-bottom {
-              .adventure-box{
-                  border: none;
-                  img{
-                      width: 40px;
-                      padding: 5px;
-                  }
+        .adventure {
 
-                  h4{
-                      display: none;
-                  }
+            .adventure-top {
+                span {
+                    font-size: 10px;
+                }
 
-                  p{
-                      display: none;
-                  }
-              }
-          }
-      }
-  }
+                h2 {
+                    font-size: 18px;
+                }
+            }
 
-  #footer{
-    .footer-top{
-      h4{
-        font-size: 18px;
-      }
+            .adventure-bottom {
+                .adventure-box {
+                    border: none;
+
+                    img {
+                        width: 40px;
+                        padding: 5px;
+                    }
+
+                    h4 {
+                        display: none;
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
-  }
+
+    #footer {
+        .footer-top {
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
 }
