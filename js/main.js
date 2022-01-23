@@ -1,12 +1,12 @@
-// //  this is for loading effect (start)
-// $(window).on("load", function () {
-//     setTimeout(() => {
-//         $("#myLoader").fadeOut("slow");
-//         $("body").css("overflow-y", "scroll")
-//     }, 2000);
+//  this is for loading effect (start)
+$(window).on("load", function () {
+    setTimeout(() => {
+        $("#myLoader").fadeOut("slow");
+        $("body").css("overflow-y", "scroll")
+    }, 2000);
 
-// });
-// //  this is for loading effect (end)
+});
+ //  this is for loading effect (end)
 
 // this is for scrollBtn (start)
 window.onscroll = function () {

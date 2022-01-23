@@ -9,7 +9,7 @@
             padding: 5px 0;
             font-family: $myFamily;
             span{
-                color: $myColor1;
+                color: $myColor4;
             }
         }
         p{
@@ -36,7 +36,7 @@
                 font-weight: 600;
                 margin-left: 10px;
                 &.active{
-                    background: $myColor1;
+                    background: $myColor4;
                     color: #fff;
                 }
                      
@@ -65,7 +65,7 @@
                              line-height: 1;
                              font-size: 12px;
                              list-style: none;
-                             color: $myColor1;
+                             color: $myColor4;
                              cursor: pointer;
                              &:hover{
                                  color:#fcd205;
@@ -112,7 +112,7 @@
                                     transition: .3s ease-in-out;
                                     &:hover{
                                         &.heart{
-                                            background-color: $myColor1;
+                                            background-color: $myColor4;
                                         }
                                         &.plus{
                                             background-color: $myColor;
@@ -124,7 +124,7 @@
     
                                 }
                                 .plus{
-                                    background-color: $myColor1;
+                                    background-color: $myColor4;
     
                                 }
                             
@@ -154,7 +154,7 @@
                                 transition: .3s ease-in-out ;
                                 cursor: pointer;
                                 &:hover{
-                                    color: $myColor1;
+                                    color: $myColor4;
                                 }
                                 i{
                                     color: #28A745;

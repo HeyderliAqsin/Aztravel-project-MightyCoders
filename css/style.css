@@ -9,6 +9,10 @@
   margin: auto;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 #video {
   position: relative;
   width: 100%;
@@ -564,7 +568,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   font-family: "Kaushan Script", cursive;
 }
 #Location .top-head h2 span {
-  color: #CB1511;
+  color: #ED6B5E;
 }
 #Location .top-head p {
   width: 700px;
@@ -632,7 +636,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   font-family: "Kaushan Script", cursive;
 }
 #Hotels .top-head h2 span {
-  color: #CB1511;
+  color: #ED6B5E;
 }
 #Hotels .top-head p {
   font-size: 18px;
@@ -660,7 +664,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   margin-left: 10px;
 }
 #Hotels #Tab .Tab-top button.active {
-  background: #CB1511;
+  background: #ED6B5E;
   color: #fff;
 }
 #Hotels #Tab .Tab-top .Tab-down {
@@ -691,7 +695,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   line-height: 1;
   font-size: 12px;
   list-style: none;
-  color: #CB1511;
+  color: #ED6B5E;
   cursor: pointer;
 }
 #Hotels #Tab .Tab-top .Tab-down .content .content-item .stars i:hover {
@@ -739,7 +743,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   transition: 0.3s ease-in-out;
 }
 #Hotels #Tab .Tab-top .Tab-down .content .content-item .img .icons a i:hover.heart {
-  background-color: #CB1511;
+  background-color: #ED6B5E;
 }
 #Hotels #Tab .Tab-top .Tab-down .content .content-item .img .icons a i:hover.plus {
   background-color: #001F3F;
@@ -748,7 +752,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   background-color: #001F3F;
 }
 #Hotels #Tab .Tab-top .Tab-down .content .content-item .img .icons a .plus {
-  background-color: #CB1511;
+  background-color: #ED6B5E;
 }
 #Hotels #Tab .Tab-top .Tab-down .content .content-item .middle {
   width: 100px;
@@ -775,7 +779,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   cursor: pointer;
 }
 #Hotels #Tab .Tab-top .Tab-down .content .content-item .text h5:hover {
-  color: #CB1511;
+  color: #ED6B5E;
 }
 #Hotels #Tab .Tab-top .Tab-down .content .content-item .text h5 i {
   color: #28A745;
@@ -803,7 +807,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   background: url(../img/map.svg);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  color: #CB1511;
+  color: #ED6B5E;
   font-size: 22px;
   font-weight: 500;
   line-height: 1.45;
@@ -838,7 +842,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   font-weight: 500;
   font-family: "Kaushan Script", cursive;
   font-weight: bold;
-  color: #CB1511;
+  color: #ED6B5E;
 }
 #Map .top .text h2 {
   color: #001F3F;
@@ -846,7 +850,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   font-family: "Kaushan Script", cursive;
 }
 #Map .top .text p {
-  color: #CB1511;
+  color: #ED6B5E;
 }
 #Map .category-item {
   background: #001F3F;
@@ -898,7 +902,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   font-family: "Kaushan Script", cursive;
 }
 #Dish .top-head h2 span {
-  color: #CB1511;
+  color: #ED6B5E;
 }
 #Dish .top-head p {
   font-size: 18px;
@@ -944,7 +948,7 @@ footer#footer .footer-copyright .copyright-right a:hover {
   color: white;
   font-weight: 600;
   border-radius: 5px;
-  background-color: #CB1511;
+  background-color: #ED6B5E;
   padding: 12px 20px;
 }
 
