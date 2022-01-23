@@ -9,6 +9,159 @@
   margin: auto;
 }
 
+#video {
+  position: relative;
+  width: 100%;
+}
+#video .blurryVideo {
+  position: absolute;
+  width: 100%;
+  height: 99.45%;
+  top: 0;
+  left: 0;
+  background-color: #001F3F;
+  opacity: 0.4;
+}
+
+.adventure {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+.adventure .adventure-top {
+  padding-top: 25px;
+  text-align: center;
+}
+.adventure .adventure-top span {
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.adventure .adventure-top span::before, .adventure .adventure-top span::after {
+  position: absolute;
+  content: " ";
+  height: 3px;
+  width: 40%;
+  top: 50%;
+  background-color: #ED6B5E;
+}
+.adventure .adventure-top span::before {
+  left: -50%;
+}
+.adventure .adventure-top span::after {
+  right: -50%;
+}
+.adventure .adventure-top h2 {
+  padding-top: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.adventure .adventure-bottom {
+  padding-top: 25px;
+}
+.adventure .adventure-bottom .adventure-box {
+  border: 1px solid #D9D9D9;
+  text-align: center;
+  padding-top: 10px;
+}
+.adventure .adventure-bottom .adventure-box img {
+  width: 90px;
+}
+.adventure .adventure-bottom .adventure-box h4 {
+  padding-top: 7px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.adventure .adventure-bottom .adventure-box p {
+  color: #ffffff;
+}
+
+#myLoader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #ED6B5E;
+}
+#myLoader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  -webkit-animation: loaderAni 2s infinite;
+          animation: loaderAni 2s infinite;
+}
+
+.scrollBtn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  bottom: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease-in-out;
+  z-index: 999;
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.scrollBtn.activeBtn {
+  -webkit-animation: carAni 1.5s ease-in-out;
+          animation: carAni 1.5s ease-in-out;
+}
+.scrollBtn:hover i {
+  color: red;
+}
+.scrollBtn img {
+  width: 50px;
+}
+
+@-webkit-keyframes loaderAni {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 43%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes loaderAni {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 43%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@-webkit-keyframes carAni {
+  from {
+    bottom: 3%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+@keyframes carAni {
+  from {
+    bottom: 3%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
 header#header {
   width: 100%;
   background-color: #001F3F;
@@ -270,82 +423,110 @@ header#header .mobile-drop ul li a:hover {
   color: #ED6B5E;
 }
 
-#video {
-  position: relative;
-  width: 100%;
-}
-#video .blurryVideo {
-  position: absolute;
-  width: 100%;
-  height: 99.45%;
-  top: 0;
-  left: 0;
-  background-color: #001F3F;
-  opacity: 0.4;
-}
-
-.adventure {
-  width: 100%;
-  position: absolute;
-  bottom: 50px;
-}
-.adventure .adventure-top {
-  padding-top: 25px;
-  text-align: center;
-}
-.adventure .adventure-top span {
-  position: relative;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #ffffff;
-}
-.adventure .adventure-top span::before, .adventure .adventure-top span::after {
-  position: absolute;
-  content: " ";
-  height: 3px;
-  width: 40%;
-  top: 50%;
-  background-color: #ED6B5E;
-}
-.adventure .adventure-top span::before {
-  left: -50%;
-}
-.adventure .adventure-top span::after {
-  right: -50%;
-}
-.adventure .adventure-top h2 {
-  padding-top: 15px;
-  font-weight: 500;
-  color: #ffffff;
-}
-.adventure .adventure-bottom {
-  padding-top: 25px;
-}
-.adventure .adventure-bottom .adventure-box {
-  border: 1px solid #D9D9D9;
-  text-align: center;
-  padding-top: 10px;
-}
-.adventure .adventure-bottom .adventure-box img {
-  width: 90px;
-}
-.adventure .adventure-bottom .adventure-box h4 {
-  padding-top: 7px;
-  font-size: 18px;
-  color: #ffffff;
-}
-.adventure .adventure-bottom .adventure-box p {
-  color: #ffffff;
-}
-
 footer#footer {
   width: 100%;
+}
+footer#footer .footer-top {
+  width: 100%;
+  background-color: #001F3F;
+  padding-top: 20px;
+}
+footer#footer .footer-top .footer-about {
+  color: #C4C3C3;
+}
+footer#footer .footer-top .footer-about h4 {
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+footer#footer .footer-top .footer-socials {
+  color: #ffffff;
+}
+footer#footer .footer-top .footer-socials h4 {
+  padding-bottom: 10px;
+}
+footer#footer .footer-top .footer-socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+footer#footer .footer-top .footer-socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+footer#footer .footer-top .footer-socials .social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+footer#footer .footer-top .footer-socials .social-icons a {
+  background-color: #ffffff;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  transition: all 0.2s ease-in;
+}
+footer#footer .footer-top .footer-socials .social-icons a:active {
+  color: #fff;
+  background-color: #29aafe;
+}
+footer#footer .footer-top .footer-socials .social-icons a:focus {
+  color: #fff;
+  background-color: #29aafe;
+}
+footer#footer .footer-top .footer-socials .social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+footer#footer .footer-top .footer-socials .social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+footer#footer .footer-top .footer-socials .social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+footer#footer .footer-top .footer-socials .social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+footer#footer .footer-top .footer-socials .social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+footer#footer .footer-top .footer-socials .social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+footer#footer .footer-top .footer-quicks h4 {
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+footer#footer .footer-top .footer-quicks .footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+footer#footer .footer-top .footer-quicks .footer-links li {
+  display: block;
+}
+footer#footer .footer-top .footer-quicks .footer-links a {
+  color: #C4C3C3;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+footer#footer .footer-top .footer-quicks .footer-links a:hover {
+  color: #ED6B5E;
 }
 footer#footer .footer-copyright {
   width: 100%;
   background-color: #001F3F;
   padding: 25px 0;
+  border-top: 1px solid #C4C3C3;
 }
 footer#footer .footer-copyright .copyright-left span {
   color: #C4C3C3;
@@ -369,143 +550,6 @@ footer#footer .footer-copyright .copyright-right a:hover {
   color: #ED6B5E;
 }
 
-@media (max-width: 1200px) {
-  #header .header-icons .header-language,
-#header .header-icons .header-search {
-    display: none;
-  }
-
-  #video .adventure .adventure-bottom .adventure-box h4 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 992px) {
-  #header .header-text,
-#header .header-icons {
-    display: none;
-  }
-  #header .header-mobile {
-    display: block !important;
-  }
-
-  #video .adventure .adventure-top span {
-    font-size: 10px;
-  }
-  #video .adventure .adventure-top h2 {
-    font-size: 18px;
-  }
-  #video .adventure .adventure-bottom .adventure-box img {
-    width: 50px;
-  }
-  #video .adventure .adventure-bottom .adventure-box p {
-    font-size: 12px;
-  }
-}
-@media (max-width: 768px) {
-  #video .adventure .adventure-top span {
-    font-size: 10px;
-  }
-  #video .adventure .adventure-top h2 {
-    font-size: 18px;
-  }
-  #video .adventure .adventure-bottom .adventure-box {
-    border: none;
-  }
-  #video .adventure .adventure-bottom .adventure-box img {
-    width: 40px;
-    padding: 5px;
-  }
-  #video .adventure .adventure-bottom .adventure-box h4 {
-    display: none;
-  }
-  #video .adventure .adventure-bottom .adventure-box p {
-    display: none;
-  }
-}
-#myLoader {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  background-color: #ED6B5E;
-}
-#myLoader img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  -webkit-animation: loaderAni 2s infinite;
-          animation: loaderAni 2s infinite;
-}
-
-.scrollBtn {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  position: fixed;
-  right: 15px;
-  bottom: -150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.6s ease-in-out;
-  z-index: 999;
-  opacity: 1;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-.scrollBtn.activeBtn {
-  -webkit-animation: carAni 1.5s ease-in-out;
-          animation: carAni 1.5s ease-in-out;
-}
-.scrollBtn:hover i {
-  color: red;
-}
-.scrollBtn img {
-  width: 50px;
-}
-
-@-webkit-keyframes loaderAni {
-  0% {
-    top: 50%;
-  }
-  50% {
-    top: 43%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-
-@keyframes loaderAni {
-  0% {
-    top: 50%;
-  }
-  50% {
-    top: 43%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-@-webkit-keyframes carAni {
-  from {
-    bottom: 3%;
-  }
-  to {
-    bottom: 100%;
-  }
-}
-@keyframes carAni {
-  from {
-    bottom: 3%;
-  }
-  to {
-    bottom: 100%;
-  }
-}
 #Location {
   padding: 80px 0;
 }
@@ -917,5 +961,62 @@ footer#footer .footer-copyright .copyright-right a:hover {
 @media (max-width: 800px) {
   #Location .top-head p {
     width: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  #header .header-icons .header-language,
+#header .header-icons .header-search {
+    display: none;
+  }
+
+  #video .adventure .adventure-bottom .adventure-box h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  #header .header-text,
+#header .header-icons {
+    display: none;
+  }
+  #header .header-mobile {
+    display: block !important;
+  }
+
+  #video .adventure .adventure-top span {
+    font-size: 10px;
+  }
+  #video .adventure .adventure-top h2 {
+    font-size: 18px;
+  }
+  #video .adventure .adventure-bottom .adventure-box img {
+    width: 50px;
+  }
+  #video .adventure .adventure-bottom .adventure-box p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  #video .adventure .adventure-top span {
+    font-size: 10px;
+  }
+  #video .adventure .adventure-top h2 {
+    font-size: 18px;
+  }
+  #video .adventure .adventure-bottom .adventure-box {
+    border: none;
+  }
+  #video .adventure .adventure-bottom .adventure-box img {
+    width: 40px;
+    padding: 5px;
+  }
+  #video .adventure .adventure-bottom .adventure-box h4 {
+    display: none;
+  }
+  #video .adventure .adventure-bottom .adventure-box p {
+    display: none;
+  }
+
+  #footer .footer-top h4 {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
