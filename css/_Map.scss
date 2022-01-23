@@ -1,5 +1,7 @@
-#Map {
+#Map{
     border-top: 1px solid #3c1053;
+
+   .sec-heading{
     background: url(../img/map.svg);
     background-repeat: no-repeat;
     background-position: 100% 0;
@@ -10,88 +12,82 @@
     line-height: 1.45;
     margin: 0 auto 29px auto;
     padding: 0;
+    font-family: "Gilroy","Arial","Helvetica Neue","Helvetica",sans-serif;
+   }
+    .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1330px;
+    min-height: 395px;
+    padding: 0 15px;
     position: relative;
-    font-family: "Gilroy", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-
-    .top {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-content: center;
-        align-items: flex-start;
-        margin: 0 auto;
-        max-width: 1230px;
-        min-height: 395px;
-        padding: 0 15px;
-        position: relative;
-
-        .text {
-            padding: 40px 0;
-
-            h1 {
-                font-weight: 500;
-                font-family: $myFamily;
-                font-weight: bold;
-                color: $myColor1;
-
-            }
-
-            h2 {
-                color: $myColor;
-                font-weight: 0;
-                font-family: $myFamily;
-
-            }
-
-            p {
-                width: 500px;
-                color: $myColor1;
-
-            }
+    }
+    .top{
+    align-self: center;
+    max-width: 47%;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+    
+    .text{
+        padding: 40px 0;
+        h1{
+            font-weight: 500;
+            font-family: $myFamily;
+            font-weight: bold;
+            color: $myColor1;
 
         }
+        h2{
+            color: $myColor;
+            font-weight: 0;
+            font-family: $myFamily;
+
+        }
+        p{
+            color: $myColor1;
+                
+        }
+     
+      }
     }
-
-    .category-item {
-        background: $myColor;
-        color: #fff;
-        height: 100%;
-        font-weight: 500;
-        margin-top: 50px;
-
-        .thumbnail-text {
+    .category-item{
+    background: $myColor;
+    color: #fff;
+    height: 100%;   
+    font-weight: 500;
+    margin-top: 50px;
+        .thumbnail-text{
             padding: 15px 19px 9px;
-
-            h4 {
-                font-weight: bold;
-
-                a {
-                    color: #fff;
-                    margin: 0 0 11px;
-                    transition: .3s ease-in-out;
-
-                    &:hover {
-                        color: #ff595a;
-                    }
+            h4{
+               font-weight: bold;
+              a{
+                color: #fff;
+                margin: 0 0 11px;
+                transition: .3s ease-in-out;
+                &:hover{
+                    color:#ff595a;
                 }
+              }
             }
-
-            p {
+            p{
                 font-size: 1rem;
-
-                a {
+                a{
                     color: #ff595a;
                     border-bottom-width: 0;
                     transition: opacity .3s;
-
-                    &:hover {
+                    &:hover{
                         opacity: 0.5;
                     }
                 }
             }
         }
-
+    
     }
-
+   
 }

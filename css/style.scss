@@ -16,8 +16,17 @@ $myFamily: 'Kaushan Script', cursive;
     margin: auto;
 }
 
+// body{
+//     overflow-y: hidden
+// }
+
 
 @import '_home.scss';
+@import '_extras.scss';
+
 @import '_location.scss';
-@import '_cuisine.scss';
+@import '_hotels.scss';
 @import '_Map.scss';
+@import '_dish.scss';
+@import '_responsive.scss';
+

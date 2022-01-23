@@ -25,8 +25,9 @@ header#header {
 
     .header-text {
 
+
         ul {
-            padding-top: 10px;
+            padding-top: 20px;
 
             li {
                 list-style: none;
@@ -229,7 +230,7 @@ header#header {
                     outline: none;
                     border: none;
                     // border: 1px solid #ccc;
-                    caret-color: $myColor1;
+                    caret-color: $myColor4;
                     padding: 2px 5px;
                 }
 
@@ -252,7 +253,123 @@ header#header {
 
     // header-search ends here
 
+    .header-login,
+    .header-signUp {
 
+        a {
+            text-decoration: none;
+            color: $myColor2;
+            padding-left: 10px;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: $myColor4;
+            }
+        }
+    }
+
+
+    .header-mobile {
+        position: relative;
+        display: none;
+
+        .drop-image {
+            width: 25px;
+            cursor: pointer;
+        }
+
+
+    }
+
+    .mobile-drop {
+        position: absolute;
+        width: 300px;
+        // height: 250px;
+        background-color: $myColor;
+        z-index: 99;
+        right: 0px;
+        visibility: hidden;
+        opacity: 0;
+        top: -350px;
+        transition: .5s ease-in-out;
+
+        &.active-menu {
+            top: 0;
+            visibility: visible;
+            opacity: 1;
+
+        }
+
+        // text-align: center;
+
+        .drop-close {
+            display: flex;
+            justify-content: end;
+            padding-top: 15px;
+            padding-right: 10px;
+            cursor: pointer;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        .drop-top {
+
+            border: 1px solid #ccc;
+            // padding: 0 5px;
+            width: 60%;
+            margin: auto;
+            margin-top: 20px;
+
+            input {
+                width: 100%;
+                outline: none;
+                border: none;
+                // border: 1px solid #ccc;
+                caret-color: $myColor4;
+                padding: 2px 5px;
+                // position: relative;
+            }
+
+            i {
+                position: absolute;
+                color: $myColor3;
+                padding-top: 5px;
+                right: 25%;
+            }
+
+
+        }
+
+
+        ul {
+
+            // margin: 0;
+            padding: 0;
+            padding-top: 20px;
+            text-align: center;
+
+            li {
+                list-style: none;
+                // border-bottom: 1px solid red;
+                // padding: 0;
+                padding-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: $myColor2;
+                    font-size: 20px;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        color: $myColor4;
+                    }
+                }
+            }
+        }
+
+    }
 
 }
 
@@ -344,6 +461,7 @@ header#header {
 
             h4 {
                 padding-top: 7px;
+                font-size: 18px;
                 color: $myColor2;
             }
 
@@ -373,6 +491,7 @@ footer#footer {
                     color: #C4C3C3;
                     transition: .3s ease-in-out;
                     font-family: $myFamily;
+
                     &:hover {
                         color: $myColor4;
                     }
@@ -396,4 +515,112 @@ footer#footer {
 }
 
 
+@media (max-width: 1200px) {
+    #header {
 
+
+
+        .header-icons {
+
+            .header-language,
+            .header-search {
+                display: none;
+            }
+        }
+    }
+
+    #video {
+
+        .adventure {
+            .adventure-bottom {
+                .adventure-box {
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    #header {
+
+        .header-text,
+        .header-icons {
+            display: none;
+        }
+
+        .header-mobile {
+            display: block !important;
+        }
+    }
+
+
+    #video {
+
+        .adventure {
+
+            .adventure-top{
+                span{
+                    font-size: 10px;
+                }
+                h2{
+                    font-size: 18px;
+                }
+            }
+            .adventure-bottom {
+                .adventure-box{
+                    img{
+                        width: 50px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    
+  
+    #video {
+
+        .adventure {
+
+            .adventure-top{
+                span{
+                    font-size: 10px;
+                }
+                h2{
+                    font-size: 18px;
+                }
+            }
+            .adventure-bottom {
+                .adventure-box{
+                    border: none;
+                    img{
+                        width: 40px;
+                        padding: 5px;
+                    }
+
+                    h4{
+                        display: none;
+                    }
+
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

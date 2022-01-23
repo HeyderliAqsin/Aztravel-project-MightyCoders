@@ -2,6 +2,7 @@
     padding: 80px 0;
     .top-head{
         text-align: center;
+        margin:0 auto;
         h2{
             font-weight: 700;
             font-size: 2.3rem;
@@ -12,16 +13,16 @@
             }
         }
         p{
+            width: 700px;
             font-size: 18px;
-            width: 650px;
             text-align: center;
-            margin: 0 auto;
+            margin:0 auto;
         }
     }
     .Location-item{
         padding: 60px 0;
         width: 285px;
-        margin: auto;
+        margin:0 auto;
         h3{
             text-align: center;
             padding: 20px 0;

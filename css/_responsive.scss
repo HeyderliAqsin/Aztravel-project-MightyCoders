@@ -1,0 +1,22 @@
+@media (max-width:900px){
+    .sec-heading{
+      display: none;
+    }
+}
+@media (max-width:700px){
+  #Dish{
+    .top-head{
+      width: 300px;
+    }
+  }
+}
+@media (max-width:800px){
+  #Location{
+    .top-head{
+      p{
+        width: 300px;
+      }
+    }
+  }
+}
+
