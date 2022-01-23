@@ -2,9 +2,7 @@
     border-top: 1px solid #3c1053;
 
    .sec-heading{
-    background: url(../img/map.svg);
-    background-repeat: no-repeat;
-    background-position: 100% 0;
+    
     // background-size: auto 100%;
     color: $myColor4;
     font-size: 22px;
@@ -14,22 +12,9 @@
     padding: 0;
     font-family: "Gilroy","Arial","Helvetica Neue","Helvetica",sans-serif;
    }
-    .container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: flex-start;
-    margin: 0 auto;
-    max-width: 1330px;
-    min-height: 395px;
-    padding: 0 15px;
-    position: relative;
-    }
+    
     .top{
     align-self: center;
-    max-width: 47%;
     position: relative;
     text-align: left;
     z-index: 10;
@@ -55,6 +40,10 @@
         }
      
       }
+    }
+
+    img{
+        width: 100%;
     }
     .category-item{
     background: $myColor;

@@ -811,9 +811,6 @@ footer#footer .footer-copyright .copyright-right a:hover {
   border-top: 1px solid #3c1053;
 }
 #Map .sec-heading {
-  background: url(../img/map.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 0;
   color: #ED6B5E;
   font-size: 22px;
   font-weight: 500;
@@ -822,22 +819,8 @@ footer#footer .footer-copyright .copyright-right a:hover {
   padding: 0;
   font-family: "Gilroy", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
-#Map .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: center;
-  align-items: flex-start;
-  margin: 0 auto;
-  max-width: 1330px;
-  min-height: 395px;
-  padding: 0 15px;
-  position: relative;
-}
 #Map .top {
   align-self: center;
-  max-width: 47%;
   position: relative;
   text-align: left;
   z-index: 10;
@@ -858,6 +841,9 @@ footer#footer .footer-copyright .copyright-right a:hover {
 }
 #Map .top .text p {
   color: #ED6B5E;
+}
+#Map img {
+  width: 100%;
 }
 #Map .category-item {
   background: #001F3F;
@@ -1537,11 +1523,6 @@ footer#footer .footer-copyright .copyright-right a:hover {
   }
   100% {
     transform: scale(1);
-  }
-}
-@media (max-width: 900px) {
-  .sec-heading {
-    display: none;
   }
 }
 @media (max-width: 700px) {
